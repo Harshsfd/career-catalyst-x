@@ -53,6 +53,15 @@ const config = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
 				},
+				// Added missing color scales used throughout the app
+				success: {
+					DEFAULT: "hsl(var(--success))",
+					foreground: "hsl(var(--success-foreground))",
+				},
+				warning: {
+					DEFAULT: "hsl(var(--warning))",
+					foreground: "hsl(var(--warning-foreground))",
+				},
 			},
 			borderRadius: {
 				lg: "var(--radius)",
