@@ -90,7 +90,7 @@ VITE_SENTRY_DSN=your_sentry_dsn
 ```
 
 On Vercel, point the project to this repo and the default `npm run build` is supported.
-Demo link: [https://multitask-mcp-server.vercel.app](https://multitask-mcp-server.vercel.app)
+Demo link: [https://career-catalyst-x.vercel.app](https://career-catalyst-x.vercel.app)
 
 ---
 
