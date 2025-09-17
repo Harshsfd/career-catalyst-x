@@ -1,140 +1,164 @@
-# 🚀 Career Catalyst — Landing & UI Boilerplate
+<!-- Banner / Logo -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vercel/vercel/main/packages/frameworks/logos/react.svg" alt="Career Catalyst Logo" width="120" />
+</p>
 
-[Live demo 🔗](https://career-catalyst-x.vercel.app)
+<h1 align="center">🚀 Career Catalyst — Landing & UI Boilerplate</h1>
 
-![Version](https://img.shields.io/badge/version-0.0.0-blue.svg) ![Build](https://img.shields.io/badge/build-vite-green) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+<p align="center">
+  A modern, responsive landing page + UI system built with <b>React + TypeScript + Vite</b> and powered by <b>shadcn/ui</b> + <b>Radix</b> primitives.
+</p>
 
-A modern, responsive landing page and UI system built with **React + TypeScript + Vite** and a component-first design using **shadcn/ui** + **Radix** primitives. This repo provides a polished starter with a hero, features, dashboard mock, and accessible UI primitives.
+<p align="center">
+  <a href="https://career-catalyst-x.vercel.app" target="_blank">🌐 Live Demo</a> ·
+  <a href="#✨-highlights">✨ Highlights</a> ·
+  <a href="#🗂️-repo-structure">📂 Structure</a> ·
+  <a href="#▶️-quick-start-local">⚡ Quick Start</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-0.0.0-blue.svg?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/build-vite-green?style=for-the-badge&logo=vite" />
+  <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge" />
+</p>
 
 ---
 
 ## ✨ Highlights
 
-- Clean, component-driven layout with `src/components/*`
-- TailwindCSS utility-first styling and animation presets
-- Ready-to-use UI primitives (dialogs, toasts, tooltips, forms)
-- TanStack Query for data fetching patterns
-- React Router for routing and page scaffolding
-- Opinionated structure that’s production-ready for static hosting (Vercel, Netlify)
+✅ Component-driven layout with `src/components/*`  
+🎨 TailwindCSS utility-first styling + animation presets  
+🧩 Ready-to-use UI primitives (dialogs, toasts, tooltips, forms)  
+⚡ Data fetching patterns with TanStack Query  
+🛣️ Routing powered by React Router v6  
+📦 Production-ready static build (Vercel, Netlify)
 
 ---
 
-## 🗂️ Repo Structure (important files)
+## 🗂️ Repo Structure
 
-```
-
+```bash
 /src
-/components    # UI + sections (Hero, Features, Dashboard)
-/hooks         # small reusable hooks (use-mobile, use-toast)
-/pages         # Index, NotFound
-/assets        # images used by landing
-main.tsx
-App.tsx
+  /components    # UI + sections (Hero, Features, Dashboard)
+  /hooks         # reusable hooks (use-mobile, use-toast)
+  /pages         # Index, NotFound
+  /assets        # images & static assets
+  main.tsx
+  App.tsx
 
 package.json
 tailwind.config.ts
 postcss.config.js
 vite.config.ts
-README.md (this file)
-
+README.md
 ````
 
 ---
 
 ## 💻 Tech Stack
 
-- React 18 + TypeScript  
-- Vite (dev server + build)  
-- TailwindCSS + tailwind-merge + animations  
-- shadcn/ui + Radix primitives  
-- React Router (v6)  
-- TanStack Query (v5)  
-- React Hook Form + Zod  
-- Sonner / custom toast system  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,radix,vercel" />
+</p>
+
+* **Framework:** React 18 + TypeScript
+* **Build Tool:** Vite
+* **Styling:** TailwindCSS, `tailwind-merge`, animation presets
+* **UI System:** shadcn/ui + Radix primitives
+* **Routing:** React Router v6
+* **Data Layer:** TanStack Query v5
+* **Forms:** React Hook Form + Zod
+* **Notifications:** Sonner + custom toasts
 
 ---
 
-## ▶️ Quick Start (local)
+## ▶️ Quick Start (Local)
 
 ```bash
-# 1. clone
-git clone <repo-url>
-cd <repo>
+# 1. Clone
+git clone https://github.com/Harshsfd/career-catalyst-x.git
+cd career-catalyst
 
-# 2. install
-npm ci
-# or
+# 2. Install dependencies
 npm install
+# or
+npm ci
 
-# 3. run dev server
+# 3. Start dev server
 npm run dev
-# Open http://localhost:5173
-````
+# App will run on http://localhost:5173
+```
 
-### Build for production
+### Build for Production
 
 ```bash
 npm run build
-npm run preview   # local preview of production build
+npm run preview   # preview production build locally
 ```
 
 ---
 
 ## 🔧 Environment & Deployment
 
-This is a static SPA suitable for Vercel or Netlify. If you add API backends, use environment variables like:
+This is a **static SPA**, so hosting on **Vercel** or **Netlify** works instantly.
 
-```
+For API integrations, define environment variables:
+
+```bash
 VITE_API_URL=https://api.example.com
 VITE_SENTRY_DSN=your_sentry_dsn
 ```
 
-On Vercel, point the project to this repo and the default `npm run build` is supported.
-Demo link: [https://career-catalyst-x.vercel.app](https://career-catalyst-x.vercel.app)
+* On **Vercel**, simply connect the repo → add env vars in *Settings → Environment Variables* → Deploy 🚀
+* Default build command: `npm run build`
+
+🔗 Live Demo: [career-catalyst-x.vercel.app](https://career-catalyst-x.vercel.app)
 
 ---
 
-## ✅ What’s inside
+## ✅ What’s Inside
 
-* **Organized** components split into `layout`, `sections`, and `ui` primitives
-* **Polished UI** built with shadcn patterns — consistent and accessible
-* **No server code** — purely frontend, safe for open source
-* **Production-ready** — already works as a hosted static SPA
-
----
-
-## ⚠️ Recommended improvements
-
-1. **Add tests:** Vitest + React Testing Library
-2. **CI/CD:** GitHub Actions for lint, typecheck, and build preview
-3. **Dependabot / Renovate:** keep dependencies updated
-4. **Accessibility:** axe/lighthouse checks for contrast & keyboard navigation
-5. **Add an `.env.example`:** document environment variables
-6. **Enable strict mode in TypeScript**
-7. **Storybook or playground** for component QA
+* Organized components: `layout`, `sections`, `ui` primitives
+* Consistent + accessible UI with shadcn patterns
+* No server-side code → safe for open-source distribution
+* Production-ready out of the box
 
 ---
 
-## 📈 Advanced improvements
+## ⚠️ Recommended Improvements
 
-* Add SSR (Next.js) if SEO is critical
-* Add analytics & feature flags for experiments
-* Integrate authentication flows with `VITE_API_URL`
+1. Add **Vitest + React Testing Library** for testing
+2. CI/CD via **GitHub Actions** (lint, typecheck, build)
+3. Enable **Dependabot / Renovate** to keep dependencies fresh
+4. Run **axe / Lighthouse** audits for accessibility & SEO
+5. Provide `.env.example` with documented vars
+6. Enable **strict mode** in TypeScript
+7. Add **Storybook** or a component playground for QA
+
+---
+
+## 📈 Advanced Improvements
+
+* Upgrade to **Next.js** for SEO + SSR if needed
+* Add analytics + feature flag system
+* Implement auth flows with `VITE_API_URL`
 
 ---
 
 ## 🤝 Contributing
 
-* Prettier/ESLint are already present — keep commits small and atomic
-* Branch naming: `feature/*`, `fix/*`, `chore/*`
-* Use PRs and require CI checks before merge
+1. Fork this repo
+2. Create a new branch: `feature/*`, `fix/*`, or `chore/*`
+3. Run Prettier + ESLint before committing
+4. Open a PR 🚀
 
 ---
 
 ## 🧾 License
 
-MIT — see LICENSE file (or add one if missing).
+MIT © \Harsh Bhardwaj 
+See [LICENSE](LICENSE) for details.
 
 ---
 
-> Generated README with ✨ polish & improvements
+<p align="center">✨ Designed with React + Tailwind + shadcn/ui ✨</p>
