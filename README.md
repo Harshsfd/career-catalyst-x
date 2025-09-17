@@ -1,9 +1,9 @@
 <!-- Banner / Logo -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vercel/vercel/main/packages/frameworks/logos/react.svg" alt="Career Catalyst Logo" width="120" />
+  🚀
 </p>
 
-<h1 align="center">🚀 Career Catalyst — Landing & UI Boilerplate</h1>
+<h1 align="center"> Career Catalyst — Landing & UI Boilerplate</h1>
 
 <p align="center">
   A modern, responsive landing page + UI system built with <b>React + TypeScript + Vite</b> and powered by <b>shadcn/ui</b> + <b>Radix</b> primitives.
@@ -58,7 +58,7 @@ README.md
 ## 💻 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,radix,vercel" />
+  <img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,vercel,github" />
 </p>
 
 * **Framework:** React 18 + TypeScript
